@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Employee List
+    </title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+</head>
+
+<body>
+    <br/>
+    <br/>
+    <div>
+        <h3 class="text-center"><strong>Employee List</strong></h3>
+    </div>
+    <br/>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <form id="employee-form" class="mb-4">
+                    <div class="form-group">
+                        <label for='fullName'><strong>Full Name:</strong></label>
+                        <input type="text" name="fullName" id="fullName" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for='email'><strong>Email:</strong></label>
+                        <input type="email" name="email" id="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for='age'><strong>Age:</strong></label>
+                        <input type="number" name="age" id="age" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block"> Submit </button>
+                </form>
+            </div>
+            <div class="col-9">
+                <table class="table text-center" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Eamil</th>
+                            <th>Age</th>
+                            <th>Edit / Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/tableRead.js"></script>
+    <script src="js/add_edit_Employee.js"></script>
+</body>
+
+</html>
