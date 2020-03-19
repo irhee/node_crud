@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: my-app
-        image: gcr.io/cloudshell-30196/app:v1
+        image: gcr.io/insoorhee301075548/app:v1
         ports:
         - containerPort: 4000
         env:
